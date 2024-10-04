@@ -16,6 +16,10 @@ class Generate {
             easyPassword = this.name.slice(space+1) + this.name.slice(0, space) + more;
             easyPassword = easyPassword.replace(" ","");
         }
+        else {
+            let callIntraMethod = new Generate(this.name);
+            easyPassword = callIntraMethod.jumble() + more;
+        }
         textarea.innerHTML = easyPassword.trim();
     }
     //intermediate password
@@ -64,6 +68,7 @@ class Generate {
         let password = this.name.split('').sort(() => 0.5 - Math.random()).join('');
         password = password.trim().replaceAll(" ","");
         textarea.innerHTML = password;
+        return password;
     }
 }
 
