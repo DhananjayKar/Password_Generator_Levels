@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width= device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  <title>Password Generator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Password Generator</h1>
+    <form action="#" id="form">
+      <input type="text" name="Name" placeholder="Enter your name here...">
+      <p style="color: white">Strength of Password : </p>
+      <select id="level" class="block" onchange = "funchange(this)">
+        <option value="Easy" selected>Easy</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Strong">Strong</option>
+        <option value="Funny" id="fun">Funny</option>
+      </select>
+      <p id="hide" class="block"><small>* This option does&apos;nt includes characters as they  (passwords) are pre-defined.</small></p>
+      <label class="block"><input type="checkbox" name="character" id="upper" class="disable">Must contain UpperCase Characters</label>
+      <label class="block"><input type="checkbox" name="character" id="lower" class="disable">Must contain LowerCase Characters</label>
+      <label class="block"><input type="checkbox" name="character" id="number" class="disable">Must contain Numeric Characters</label>
+      <label class="block"><input type="checkbox" name="character" id="special" class="disable">Must contain Special Characters</label>
+      <button id="enter" class="block">Generate</button>
+      <textarea name="password" readonly>Your Password</textarea>
+      <button id="copy" class="block">Copy Password</button>
+      <input type="hidden" id="creator" value="by Dhananjay Kar">
+    </form>
+  </div>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
