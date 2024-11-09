@@ -10,7 +10,6 @@ body {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(to bottom right, #07C8F9,#09A6F3,#0A85ED,#0C63E7,#0D41E1);
-  background-size: 100% 100%;
   color: white;
   height: 100vh;
 }
